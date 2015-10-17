@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<title>Portfolio</title>
+
+	<link rel="stylesheet" href="build/styles/main.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  
+    <!-- Load local jQuery.  -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+    <!-- Load local lib and tests. -->
+    <script src="src/jquery.pep.js"></script>
+
+    
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.RedSquare').pep({ constrainTo: 'window' });
+      });
+    </script>
+    
+       <script type="text/javascript">
+      $(document).ready(function(){
+        $('.GreenSquare').pep({ constrainTo: 'window' });
+      });
+    </script>
+    
+  <script>
+  $(window).scroll(function(){
+  var x = $(this).scrollTop(),
+      transY = (x * 0.5), scale = 1 + (x * 0.0003),
+      transform = 'translateY('+transY+'px) scale('+scale+') translate3d(0,0,0)';
+  $('.header .header-bg-txt').css({
+    opacity: 1 - (x * 0.003),
+    WebkitTransform: transform,
+    MozTransform: transform,
+    msTransform: transform,
+    transform: transform
+  });
+});
+  </script>  
+    
+
+</head>
+<body class="body-modal " >
+	<header class="header" role="banner" id="top">
+         <div class='header-bg-txt'></div>
+		<div class="header__inner">
+			<nav class="header__nav" role="navigation">
+				<button class="header__nav-toggle js-toggle-menu" role="button"></button>
+				<ul class="menu">
+					<li class="menu__item menu__item--link">
+						<a href="index.html" data-scroll>HOME</a>
+					</li><!-- /.menu__item -->
+
+					<li class="menu__item menu__item--link">
+						<a href="text.html" data-scroll>TEXT</a>
+					</li><!-- /.menu__item -->
+                  
+                    <li class="menu__item menu__item--link">
+						<a href="illustration.html">ILLUSTRATION</a>
+					</li><!-- /.menu__item -->
+   
+				</ul><!-- /.menu -->
+			</nav><!-- /.header__nav -->
+		</div><!-- /.header__inner -->
+
+		<div class="header__intro">
+			<div class="header__intro-inner">
+			</div><!-- /.header__intro-inner -->
+		</div><!-- /.header__intro -->
+	</header><!-- /.header -->
+
+	<div class="MobileNavigation ">
+		<table>
+			<tr>
+				<td>
+					<a href="#about" class="menu__link" data-scroll>Text</a>
+					<a href="#works" class="menu__link" data-scroll>Illustration</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<article role="main">
+		<section class="section section--about" id="about">
+			<div class="container">
+               <div class = "RedSquare" style="width:230px;height:160px;background-color:#ea3255;"></div>
+              <div class="GreenSquare" style="width:250px;height:160px;background-color: #239945;"></div>
+				<h1 class="section__title">Welcome</h1>
+				<div class="about">
+					<p class="EgnlishRed">By using two complementary colors, they are able to have a strong contrast with each other. When a red overlay is on top of the text or illustration it blends with the red color. The green overlay blends with the green illustration or text and is able to display the reds.
+</p>
+                  			<p class="SpanishGreen"> Mediante el uso de dos colores complementarios , que son capaces de tener un fuerte contraste entre sí. Cuando una capa roja es en la parte superior del texto o ilustración que se mezcla con el color rojo . La superposición de verde se mezcla con la ilustración o texto y es capaz de mostrar los rojos.
+
+</p>
+                  
+              <div id="extrapadding1"></div>     
+				</div><!-- /.about -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+
+	</article>
+  
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<script src="build/scripts/vendor.js"></script>
+<script src="build/scripts/portfolio.js"></script>
+
+</body>
+</html>

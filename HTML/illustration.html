@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<title>Portfolio</title>
+
+	<link rel="stylesheet" href="build/styles/main.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  
+    <!-- Load local jQuery.  -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+    <!-- Load local lib and tests. -->
+    <script src="src/jquery.pep.js"></script>
+
+    
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.RedSquare-ill').pep({ constrainTo: 'window' });
+      });
+    </script>
+  
+       <script type="text/javascript">
+      $(document).ready(function(){
+        $('.GreenSquare-ill').pep({ constrainTo: 'window' });
+      });
+    </script>
+  
+  
+  <script>
+  $(window).scroll(function(){
+  var x = $(this).scrollTop(),
+      transY = (x * 0.5), scale = 1 + (x * 0.0003),
+      transform = 'translateY('+transY+'px) scale('+scale+') translate3d(0,0,0)';
+  $('.header-ill .header-bg').css({
+    opacity: 1 - (x * 0.00244),
+    WebkitTransform: transform,
+    MozTransform: transform,
+    msTransform: transform,
+    transform: transform
+  });
+});
+  </script>
+</head>
+  
+<body class="body-modal">
+	<header class="header-ill slide" role="banner" id="top">
+      <div class='header-bg'></div>
+		<div class="header__inner">
+          <nav class="header__nav" role="navigation">
+				<ul class="menu">
+					<li class="menu__item menu__item--link">
+						<a href="index.html">HOME</a>
+					</li><!-- /.menu__item -->
+
+					<li class="menu__item menu__item--link">
+						<a href="text.html" data-scroll>TEXT</a>
+					</li><!-- /.menu__item -->
+                  
+                    <li class="menu__item menu__item--link">
+						<a href="#works" >ILLUSTRATION</a>
+					</li><!-- /.menu__item -->
+                  
+				</ul><!-- /.menu -->
+			</nav><!-- /.header__nav -->
+		</div><!-- /.header__inner -->
+
+		<div class="header__intro">
+			<div class="header__intro-inner">
+			</div><!-- /.header__intro-inner -->
+		</div><!-- /.header__intro -->
+	</header><!-- /.header -->
+
+	<div class="MobileNavigation">
+		<table>
+			<tr>
+				<td>
+					<a href="#about" class="menu__link" data-scroll>About</a>
+					<a href="#works" class="menu__link" data-scroll>Works</a>
+					<a href="#contact" class="menu__link" data-scroll>Get in touch</a>
+					<a href="" title="" class="button-modal">Hire me</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<article role="main">
+		<section class="section section--about slide" id="about">
+			<div class="container">
+               <div class = "RedSquare-ill" style="width:400px;height:350px;background-color:#ea3255;"></div>
+              <div class="GreenSquare-ill" style="width:400px;height:350px;background-color: #239945;"></div>
+				<h1 class="section__title">Illustration
+                     <a href="http://www.alanversuszhang.com/" target="_blank"><p class="ByWho">By Alan Zhang</p> </a>
+              </h1>
+				<div class="about">
+                  <div id="sketch">
+                        <div id="sketchplace"></div>
+                        <div id="sketchplace-m"></div>
+                  </div>   
+				</div><!-- /.about -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+	</article>
+  
+		<footer class="footer" role="contentinfo">
+		<div class="container">
+			<p class="footer__note footer__note--primary">
+				© 2015 by <span class="footer__title">Alex Flores</span>
+			</p><!-- /.footer__note -->
+          	<section class="section section--links" id="contact">
+			<div class="container">
+				<ul class="links">
+					<li class="links__item">
+						<a href="http://twitter.com/allxflores" target="_blank" class="links__link links__link--twitter">
+							<i class="icon-twitter" title="Twitter"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="https://www.linkedin.com/in/alexisflores" target="_blank" class="links__link links__link--linkedin">
+							<i class="icon-linkedin" title="LinkedIn"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="https://dribbble.com/allxflores" target="_blank" class="links__link links__link--dribbble">
+							<i class="icon-dribbble" title="Dribbble"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="http://instagram.com/alex_amaru" target="_blank" class="links__link links__link--instagram">
+							<i class="icon-instagram" title="Instagram"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="mailto:alexfloresdesigns@gmail.com" class="links__link links__link--mail">
+							<i class="icon-mail" title="E-mail"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+				</ul><!-- /.links -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<script src="build/scripts/vendor.js"></script>
+<script src="build/scripts/portfolio.js"></script>
+
+</body>
+</html>

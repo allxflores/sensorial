@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<title>Portfolio</title>
+
+	<link rel="stylesheet" href="build/styles/main.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  
+    <!-- Load local jQuery.  -->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+    <!-- Load local lib and tests. -->
+    <script src="src/jquery.pep.js"></script>
+
+    
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.RedSquare').pep({ constrainTo: 'window' });
+      });
+    </script>
+    
+       <script type="text/javascript">
+      $(document).ready(function(){
+        $('.GreenSquare').pep({ constrainTo: 'window' });
+      });
+    </script>
+  
+  <script>
+  $(window).scroll(function(){
+  var x = $(this).scrollTop(),
+      transY = (x * 0.5), scale = 1 + (x * 0.0003),
+      transform = 'translateY('+transY+'px) scale('+scale+') translate3d(0,0,0)';
+  $('.header .header-bg-txt').css({
+    opacity: 1 - (x * 0.00244),
+    WebkitTransform: transform,
+    MozTransform: transform,
+    msTransform: transform,
+    transform: transform
+  });
+});
+  </script>  
+</head>
+  
+<body class="body-modal">
+	<header class="header" role="banner" id="top">
+      <div class='header-bg-txt'></div>
+		<div class="header__inner">
+			<nav class="header__nav" role="navigation">
+				<button class="header__nav-toggle js-toggle-menu" role="button"></button>
+				<ul class="menu">
+					<li class="menu__item menu__item--link">
+						<a href="index.html" data-scroll>HOME</a>
+					</li><!-- /.menu__item -->
+
+					<li class="menu__item menu__item--link">
+						<a href="#works"  data-scroll>TEXT</a>
+					</li><!-- /.menu__item -->
+                  
+                    <li class="menu__item menu__item--link">
+						<a href="illustration.html">ILLUSTRATION</a>
+					</li><!-- /.menu__item -->
+
+				</ul><!-- /.menu -->
+			</nav><!-- /.header__nav -->
+		</div><!-- /.header__inner -->
+
+		<div class="header__intro">
+			<div class="header__intro-inner">
+			</div><!-- /.header__intro-inner -->
+		</div><!-- /.header__intro -->
+	</header><!-- /.header -->
+
+	<div class="MobileNavigation">
+		<table>
+			<tr>
+				<td>
+					<a href="#about" class="menu__link" data-scroll>About</a>
+					<a href="#works" class="menu__link" data-scroll>Works</a>
+					<a href="#contact" class="menu__link" data-scroll>Get in touch</a>
+					<a href="" title="" class="button-modal">Hire me</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<article role="main" >
+		<section class="section section--about" id="about">
+			<div class="container">
+               <div class = "RedSquare" style="width:230px;height:160px;background-color:#ea3255;"></div>
+              <div class="GreenSquare" style="width:250px;height:160px;background-color: #239945;"></div>
+				<h1 class="section__title">A Song
+               <a href="http://genius.com/Kendrick-lamar-now-or-never-lyrics" target="_blank"><p class="ByWho">By Kendrick Lamar</p> </a>
+              </h1>
+              		<div class="about">
+                  <div id="textbox">
+                    <p class="EgnlishRed">Waking up in a dream
+    Sleepwalking on another big stage
+    You never heard peace 'til you hear people scream
+    Your name and your song, I'm so far away
+    From the place I used to be, struggling usually
+    Look at the newer me, fate pursuing me
+    I can feel the energy in the air
+    It feel like I'm supposed to be here
+
+    I'm so high I can touch the sky
+    I know it's my time
+    And it's now or never
+    Shine so bright, I light the night
+    And it feels so right, ain't nothing better
+    <br />
+    <br />
+    <br />
+    A fool if I take it all for granted,
+    A smart man if I keep my feet planted
+    to the earth cause the people that hurt can understand it.
+    You speakin' outlandish;
+    I'm a show you how to make it all work
+    Another plan, it a short term goal for me
+    A record sold for me
+    It's just more of me in your ear
+    For you to hear Kendrick persevere
+    Defenses I feel relentless
+    Ambition with a clear vision
+    Takin' off I ain't takin off these Pistons
+    I'm takin' off on the inner me - you're distance
+    Came across me, how much it'a cost me
+    To get you out my business
+    I set a plan, it's a short term goal, no sky is the limit
+    I'm past that, now pass that
+    Award, not one but four
+    Times two plus yours
+    <br />
+    <br />
+    <br />
+    <br />
+    You looking at me and you tell me I'm blessed
+    Calculated my steps, my heart, my breath
+    Breathe hums? of a victory and vividly
+    You see me when at my best, my worst
+    This verse dedicated to the days that I slept
+    With a curse research my paid dues I'm reimbursed
+    I burst in the crowd with a voice and crown
+    I'm a King on the prowl and I see mama smile?
+    And I vow on the tape that I'll never break
+    You can break bread with me now
+    We can all take a bow on the edge of the pedestal
+    Then scream out loud that we made it off the avenue
+    And walked that mile
+    In the darkness I often sit back
+    And get lost in the rap that I wrote
+    When you told me that it spoke to your soul
+    I was talking to you
+    I was walking it through every ghetto
+    Tell success hello
+    We here
+
+    </p>
+                    <p class="SpanishGreen"> El despertar en un sueño
+    El sonambulismo en otro gran escenario
+    Usted nunca ha oído hablar de paz "hasta que escuche la gente grita
+    Su nombre y su canción, estoy tan lejos
+    Desde el lugar que solía ser, luchando por lo general
+    Mira el nuevo yo, el destino me persigue
+    Puedo sentir la energía en el aire
+    Se siente como se supone que debo estar aquí
+
+    Estoy tan alto que puedo tocar el cielo
+    Sé que es mi tiempo
+    Y es ahora o nunca
+    Brilla tan brillante, enciendo la noche
+    Y se siente tan bien, no hay nada mejor
+    <br />
+    <br />
+    Un tonto si me tomo todo por sentado
+    Un hombre inteligente si sigo mis pies plantados
+    Para la tierra causar daño a la gente que lo puede entender
+    Usted speakin 'descabellada
+    Soy un espectáculo de cómo hacer que todo funcione
+    Otro plan, una meta a corto plazo para mí
+    Un registro se vende para mí
+    Es sólo más de mí en el oído
+    Para que usted pueda escuchar Kendrick perseverar
+    Defensas me siento implacable
+    Ambición con una visión clara
+    Takin 'off I no es Takin fuera estos Pistons
+    Estoy Takin 'Off en el yo interno - que está lejos
+    Encontré mí, cómo me costó mucho It'a
+    Para sacarte de mi negocio
+    Me puse un plan, es una meta a corto plazo, no hay cielo es el límite
+    Estoy más allá de eso, ahora que pasar
+    Premio, no uno, sino de cuatro
+    Tiempos dos más tuyo
+    <br />
+    <br />
+    Usted que me mira y me dice que estoy bendecido
+    Calculado sobre mis pasos, mi corazón, mi respiración
+    Respire zumba? de una victoria y vívidamente
+    Me ves cuando en mi mejor momento, mi peor
+    Este verso dedicado a los días que he dormido
+    Con una maldición investigar mis cuotas pagadas estoy reembolsados
+    Me eché en la multitud con una voz y la corona
+    Soy un rey en el vagabundeo y veo mama sonrisa?
+    Y me comprometo en la cinta que yo nunca voy a romper
+    Puede partir el pan conmigo ahora
+    Todos podemos tener un arco en el borde del pedestal
+    Entonces gritamos en voz alta que lo hicimos fuera de la avenida
+    Y se fue esa milla
+    En la oscuridad, a menudo me siento de nuevo
+    Y perderse en el rap que escribí
+    Cuando usted me dijo que habló con el alma
+    Yo estaba hablando con usted
+    Yo estaba caminando a través de cada gueto
+    Dile hola éxito
+    Nosotros aquí
+    </p>
+                  </div>  
+                  <div id="extrapadding"></div>    
+				</div><!-- /.about -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+	</article>
+  
+		<footer class="footer" role="contentinfo">
+		<div class="container">
+			<p class="footer__note footer__note--primary">
+				© 2015 by <span class="footer__title">Alex Flores</span>
+			</p><!-- /.footer__note -->
+          	<section class="section section--links" id="contact">
+			<div class="container">
+				<ul class="links">
+					<li class="links__item">
+						<a href="http://twitter.com/allxflores" target="_blank" class="links__link links__link--twitter">
+							<i class="icon-twitter" title="Twitter"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="https://www.linkedin.com/in/alexisflores" target="_blank" class="links__link links__link--linkedin">
+							<i class="icon-linkedin" title="LinkedIn"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="https://dribbble.com/allxflores" target="_blank" class="links__link links__link--dribbble">
+							<i class="icon-dribbble" title="Dribbble"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="http://instagram.com/alex_amaru" target="_blank" class="links__link links__link--instagram">
+							<i class="icon-instagram" title="Instagram"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+
+					<li class="links__item">
+						<a href="mailto:alexfloresdesigns@gmail.com" class="links__link links__link--mail">
+							<i class="icon-mail" title="E-mail"></i>
+						</a><!-- /.links__link -->
+					</li><!-- /.links__item -->
+				</ul><!-- /.links -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<script src="build/scripts/vendor.js"></script>
+<script src="build/scripts/portfolio.js"></script>
+
+</body>
+</html>
